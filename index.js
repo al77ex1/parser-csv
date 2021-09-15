@@ -5,10 +5,10 @@ const bluebird = require('bluebird');
 
 (async () => {
 const connection = await mysql.createConnection({
-  host: '192.168.0.108',
-  user: 'admin',
-  password: 'qwerty',
-  database: 'crawler',
+  host: 'dbHost',
+  user: 'dbUser',
+  password: 'dbPassword',
+  database: 'database',
   Promise: bluebird
 });
 
