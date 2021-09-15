@@ -15,7 +15,7 @@ const connection = await mysql.createConnection({
 
 const resData=[];
 
-fs.createReadStream('_clutch_developers_artificial_intelligence_0_58.csv')
+fs.createReadStream('file.csv')
   .pipe(parse({delimiter: ','}))
   .on('data', function(csvrow) {
     resData.push(csvrow);        
